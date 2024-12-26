@@ -1,0 +1,208 @@
+html,body{
+ 
+    font-family: 'DM Sans', sans-serif;
+
+}
+nav {
+  background-color: black; /* Set the navbar background to black */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#nav-left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#nav-left > i {
+  font-size: 2em;
+  padding: 0px 15px;
+}
+
+#nav-left > .brand {
+  color: white; /* Change text color to white */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#nav-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#nav-right > a {
+  text-decoration: none;
+  color: white; /* Change link text color to white */
+  font-weight: normal;
+  font-size: inherit;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+}
+
+#nav-right > a:hover {
+  text-decoration: underline; /* Optional hover effect */
+  color: #d9534f; /* Optional hover color (Tomato) */
+  scale: 1.1;
+  transition: 0.4s all ease-in-out;
+}
+
+.title{
+  /* color: white; */
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin: 0px 12px;
+  margin-top: 9px;
+  color:#fff;
+  font-weight: 600;
+}.fa-bowl-rice {
+  color: #d9534f; /* Tomato color for the logo */
+  font-size: 2rem; /* Optional: adjust the size to match */
+  margin-left: 5px; /* Add some spacing between DISHES and the icon */
+}
+#hero-section{
+    height: 400px;
+    display: flex;
+    margin-top: 50px;
+}
+#hero-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#hero-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+#hero-left> p{
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #535353;
+    text-align: center;
+}
+#hero-heading{
+    font-size: 3em;
+}
+#hero-heading-span{
+    color: #d9534f;
+}.back-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  height: 50px;
+}
+
+.back-button:hover {
+  background-color: black;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+  transform: scale(1.1);
+}
+
+  
+/* Recipe Cards Section */
+.recipe-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  width: 200px;
+  height: 250px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recipe-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+}
+
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #d9534f;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.social-icons a:hover {
+  color: white;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+  size: 50%;
+}
+/* Ensure the body and html cover the full viewport height */
+html, body{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content section to push footer down */
+main {
+  flex: 1;
+  padding: 20px; /* Add padding if needed */
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: auto;
+  margin-top: 5%;
+}
+
+
+  

@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="recipes.css">
+    <title>Divine Dishes</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav>
+        <div id="nav-left">
+            <h1 class="title"><span class="title-span" style="color: #d9534f;">DIVINE</span> DISHES</h1>
+            <i class="fa-solid fa-bowl-rice"></i>
+        </div>
+        <div id="nav-right">
+            <a href="/">HOME</a>
+            <a href="/recipes.html">RECIPES</a>
+            <a href="/aboutus.html">ABOUT US</a>
+            <a href="/review.html">REVIEW</a>
+            <a href="/contactus.html">CONTACT US</a>
+           
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h2 class="text-center text-danger mb-4" style="font-weight: bold;">Available Dishes</h2>
+
+        <div class="row g-4">
+            <!-- Chinese Category -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleDropdown('chinese-dishes')">
+                    <img src="chineese.jpeg" alt="Chinese Cuisine" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger">Chinese</h5>
+                    </div>
+                </div>
+                <details id="chinese-dishes" class="dish-dropdown">
+                    <summary>Click to view Chinese Dishes</summary>
+                    <ul class="list-unstyled mt-2">
+                        <li onclick="navigateToRecipe('hot_and_sour_soup')">Hot and Sour Soup</li>
+                        <li onclick="navigateToRecipe('chicken_corn_soup')">Chicken Corn Soup</li>
+                        <li onclick="navigateToRecipe('spring_rolls')">Spring Rolls</li>
+                        <li onclick="navigateToRecipe('chicken_manchurian_balls')">Chicken Manchurian Balls</li>
+                        <li onclick="navigateToRecipe('crispy_honey_chicken_wings')">Crispy Honey Chicken Wings</li>
+                        <li onclick="navigateToRecipe('chicken_dumplings')">Chicken Dumplings</li>
+                        <li onclick="navigateToRecipe('chili_garlic_prawns')">Chili Garlic Prawns</li>
+                        <li onclick="navigateToRecipe('chowmein')">Chowmein</li>
+                        <li onclick="navigateToRecipe('fried_rice')">Fried Rice</li>
+                        <li onclick="navigateToRecipe('chicken_chili_dry')">Chicken Chili Dry</li>
+                        <li onclick="navigateToRecipe('szechuan_beef')">Szechuan Beef</li>
+                        <li onclick="navigateToRecipe('crispy_chicken_in_garlic_sauce')">Crispy Chicken in Garlic Sauce</li>
+                        <li onclick="navigateToRecipe('black_pepper_chicken')">Black Pepper Chicken</li>
+                        <li onclick="navigateToRecipe('sweet_and_sour_chicken')">Sweet and Sour Chicken</li>
+                        <li onclick="navigateToRecipe('kung_pao_chicken')">Kung Pao Chicken</li>
+                        <li onclick="navigateToRecipe('lemon_chicken')">Lemon Chicken</li>
+                        <li onclick="navigateToRecipe('egg_fried_noodles')">Egg Fried Noodles</li>
+                        <li onclick="navigateToRecipe('spicy_garlic_noodles')">Spicy Garlic Noodles</li>
+                        <li onclick="navigateToRecipe('stir_fried_veggie_noodles')">Stir-Fried Veggie Noodles</li>
+                        <li onclick="navigateToRecipe('seafood_fried_rice')">Seafood Fried Rice</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Desi Category -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleDropdown('desi-dishes')">
+                    <img src="desi.jpeg" alt="Desi Cuisine" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger">Desi</h5>
+                    </div>
+                </div>
+                <details id="desi-dishes" class="dish-dropdown">
+                    <summary>Click to view Desi Dishes</summary>
+                    <ul class="list-unstyled mt-2">
+                        <li onclick="navigateToRecipe('biryani')">Biryani</li>
+                        <li onclick="navigateToRecipe('pulao')">Pulao</li>
+                        <li onclick="navigateToRecipe('butter_chicken')">Butter Chicken</li>
+                        <li onclick="navigateToRecipe('chicken_karahi')">Chicken Karahi</li>
+                        <li onclick="navigateToRecipe('nihari')">Nihari</li>
+                        <li onclick="navigateToRecipe('seekh_kebabs')">Seekh Kebabs</li>
+                        <li onclick="navigateToRecipe('rogan_josh')">Rogan Josh</li>
+                        <li onclick="navigateToRecipe('aloo_gosht')">Aloo Gosht</li>
+                        <li onclick="navigateToRecipe('saag_gosht')">Saag Gosht</li>
+                        <li onclick="navigateToRecipe('daal_makhani')">Daal Makhani</li>
+                        <li onclick="navigateToRecipe('chicken_korma')">Chicken Korma</li>
+                        <li onclick="navigateToRecipe('chole_bhature')">Chole Bhature</li>
+                        <li onclick="navigateToRecipe('mutton_pulao')">Mutton Pulao</li>
+                        <li onclick="navigateToRecipe('palak_paneer')">Palak Paneer</li>
+                        <li onclick="navigateToRecipe('tandoori_chicken')">Tandoori Chicken</li>
+                        <li onclick="navigateToRecipe('keema_matar')">Keema Matar</li>
+                        <li onclick="navigateToRecipe('baingan_bharta')">Baingan Bharta</li>
+                        <li onclick="navigateToRecipe('peshawari_chapli_kebab')">Peshawari Chapli Kebab</li>
+                        <li onclick="navigateToRecipe('bhindi_masala')">Bhindi Masala</li>
+                        <li onclick="navigateToRecipe('lamb_kofta_curry')">Lamb Kofta Curry</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- BBQ Category -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleDropdown('bbq-dishes')">
+                    <img src="bbq.jpg" alt="BBQ Cuisine" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger">BBQ</h5>
+                    </div>
+                </div>
+                <details id="bbq-dishes" class="dish-dropdown">
+                    <summary>Click to view BBQ Dishes</summary>
+                    <ul class="list-unstyled mt-2">
+                        <li onclick="navigateToRecipe('chicken_shawarma_skewers')">Chicken Shawarma Skewers</li>
+                        <li onclick="navigateToRecipe('lamb_kofta_kebabs')">Lamb Kofta Kebabs</li>
+                        <li onclick="navigateToRecipe('chicken_tikka')">Grilled Chicken Tikka</li>
+                        <li onclick="navigateToRecipe('lamb_chops')">Lamb Chops</li>
+                        <li onclick="navigateToRecipe('bbq_chicken_wings')">BBQ Chicken Wings</li>
+                        <li onclick="navigateToRecipe('grilled_fish_tikka')">Grilled Fish Tikka</li>
+                        <li onclick="navigateToRecipe('beef_seekh_kebabs')">Beef Seekh Kebabs</li>
+                        <li onclick="navigateToRecipe('chicken_malai_tikka')">Chicken Malai Tikka</li>
+                        <li onclick="navigateToRecipe('halal_hot_dogs')">Halal Hot Dogs</li>
+                        <li onclick="navigateToRecipe('grilled_shrimp_skewers')">Grilled Shrimp Skewers</li>
+                        <li onclick="navigateToRecipe('kebab_roll')">Kebab Roll</li>
+                        <li onclick="navigateToRecipe('bbq_chicken_breast')">BBQ Chicken Breast</li>
+                        <li onclick="navigateToRecipe('shami_kebabs')">Shami Kebabs</li>
+                        <li onclick="navigateToRecipe('mutton_seekh_kebab')">Mutton Seekh Kebab</li>
+                        <li onclick="navigateToRecipe('bbq_stuffed_chicken')">BBQ Stuffed Chicken</li>
+                        <li onclick="navigateToRecipe('bbq_ribs')">BBQ Ribs</li>
+                        <li onclick="navigateToRecipe('grilled_tandoori_chicken')">Grilled Tandoori Chicken</li>
+                        <li onclick="navigateToRecipe('bbq_pork_belly')">BBQ Pork Belly</li>
+                        <li onclick="navigateToRecipe('grilled_steak')">Grilled Steak</li>
+                        <li onclick="navigateToRecipe('grilled_chicken_burgers')">Grilled Chicken Burgers</li>
+
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Fast Food Category -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleDropdown('fastfood-dishes')">
+                    <img src="fastfood.jpeg" alt="Fast Food" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger">Fast Food</h5>
+                    </div>
+                </div>
+                <details id="fastfood-dishes" class="dish-dropdown">
+                    <summary>Click to view Fast Food Dishes</summary>
+                    <ul class="list-unstyled mt-2">
+                        <li onclick="navigateToRecipe('hamburger')">Hamburger</li>
+                        <li onclick="navigateToRecipe('cheeseburger')">Cheeseburger</li>
+                        <li onclick="navigateToRecipe('chicken_nuggets')">Chicken Nuggets</li>
+                        <li onclick="navigateToRecipe('french_fries')">French Fries</li>
+                        <li onclick="navigateToRecipe('pizza')">Pizza</li>
+                        <li onclick="navigateToRecipe('fish_and_chips')">Fish and Chips</li>
+                        <li onclick="navigateToRecipe('chicken_sandwich')">Chicken Sandwich</li>
+                        <li onclick="navigateToRecipe('wraps')">Wraps</li>
+                        <li onclick="navigateToRecipe('burritos')">Burritos</li>
+                        <li onclick="navigateToRecipe('tacos')">Tacos</li>
+                        <li onclick="navigateToRecipe('fried_chicken')">Fried Chicken</li>
+                        <li onclick="navigateToRecipe('chicken_wings')">Chicken Wings</li>
+                        <li onclick="navigateToRecipe('mozzarella_sticks')">Mozzarella Sticks</li>
+                        <li onclick="navigateToRecipe('onion_rings')">Onion Rings</li>
+                        <li onclick="navigateToRecipe('shawarma')">Shawarma</li>
+                        <li onclick="navigateToRecipe('chicken_quesadilla')">Chicken Quesadilla</li>
+                        <li onclick="navigateToRecipe('chicken_fajitas')">Chicken Fajitas</li>
+                        <li onclick="navigateToRecipe('cheese_sticks')">Cheese Sticks</li>
+                        <li onclick="navigateToRecipe('mozzarella_balls')">Mozzarella Balls</li>
+                        <li onclick="navigateToRecipe('sliders')">Sliders</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Dessert Category -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleDropdown('dessert-dishes')">
+                    <img src="dessert.jpg" alt="Desserts" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger">Desserts</h5>
+                    </div>
+                </div>
+                <details id="dessert-dishes" class="dish-dropdown">
+                    <summary>Click to view Dessert Dishes</summary>
+                    <ul>
+                    <li onclick="navigateToRecipe('brownies')">Brownies</li>
+                    <li onclick="navigateToRecipe('ice_cream')">Ice Cream</li>
+                    <li onclick="navigateToRecipe('gulab_jamun')">Gulab Jamun</li>
+                    <li onclick="navigateToRecipe('kheer')">Kheer</li>
+                    <li onclick="navigateToRecipe('fruit_custard')">Fruit Custard</li>
+                    <li onclick="navigateToRecipe('tiramisu')">Tiramisu</li>
+                    <li onclick="navigateToRecipe('cheesecake')">Cheesecake</li>
+                    <li onclick="navigateToRecipe('pudding')">Pudding</li>
+                    <li onclick="navigateToRecipe('apple_pie')">Apple Pie</li>
+                    <li onclick="navigateToRecipe('carrot_halwa')">Carrot Halwa</li>
+                    <li onclick="navigateToRecipe('trifle')">Trifle</li>
+                    <li onclick="navigateToRecipe('lava_cake')">Lava Cake</li>
+                    <li onclick="navigateToRecipe('chocolate_mousse')">Chocolate Mousse</li>
+                    <li onclick="navigateToRecipe('baklava')">Baklava</li>
+                    <li onclick="navigateToRecipe('rasmalai')">Rasmalai</li>
+                    <li onclick="navigateToRecipe('macarons')">Macarons</li>
+                    <li onclick="navigateToRecipe('doughnuts')">Doughnuts</li>
+                    <li onclick="navigateToRecipe('tart')">Tart</li>
+                    <li onclick="navigateToRecipe('falooda')">Falooda</li>
+                    <li onclick="navigateToRecipe('churros')">Churros</li>
+                    </ul>
+                </details>
+            </div>
+        
+        <div class="col-md-4">
+            <div class="card" onclick="toggleDropdown('beverage-dishes')">
+                <img src="beverages.jpg" alt="Beverages" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-danger">Beverages</h5>
+                </div>
+            </div>
+            <details id="beverage-dishes" class="dish-dropdown">
+                <summary>Click to view Beverage Dishes</summary>
+                <ul>
+                    <li onclick="navigateToRecipe('coffee')">Coffee</li>
+                    <li onclick="navigateToRecipe('tea')">Tea</li>
+                    <li onclick="navigateToRecipe('milkshake')">Milkshake</li>
+                    <li onclick="navigateToRecipe('smoothie')">Smoothie</li>
+                    <li onclick="navigateToRecipe('iced_tea')">Iced Tea</li>
+                    <li onclick="navigateToRecipe('lemonade')">Lemonade</li>
+                    <li onclick="navigateToRecipe('mocktail')">Mocktail</li>
+                    <li onclick="navigateToRecipe('hot_chocolate')">Hot Chocolate</li>
+                    <li onclick="navigateToRecipe('lassi')">Lassi</li>
+                    <li onclick="navigateToRecipe('green_tea')">Green Tea</li>
+                    <li onclick="navigateToRecipe('cola_float')">Cola Float</li>
+                    <li onclick="navigateToRecipe('mango_juice')">Mango Juice</li>
+                    <li onclick="navigateToRecipe('strawberry_shake')">Strawberry Shake</li>
+                    <li onclick="navigateToRecipe('coldCoffee')">Cold Coffee</li>
+                    <li onclick="navigateToRecipe('energyDrink')">Energy Drink</li>
+                    <li onclick="navigateToRecipe('herbalTea')">Herbal Tea</li>
+                    <li onclick="navigateToRecipe('pineappleJuice')">Pineapple Juice</li>
+                    <li onclick="navigateToRecipe('coconutWater')">Coconut Water</li>
+                    <li onclick="navigateToRecipe('watermelonJuice')">Watermelon Juice</li>
+                    <li onclick="navigateToRecipe('orangeSquash')">Orange Squash</li>
+                </ul>
+            </details>
+        </div>
+    </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Cookbook. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripttt.js"></script>
+</body>
+</html>

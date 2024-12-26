@@ -1,0 +1,173 @@
+
+html,body{
+ 
+  font-family: 'DM Sans', sans-serif;
+
+}
+nav {
+background-color: black; /* Set the navbar background to black */
+height: 50px;
+display: flex;
+align-items: center;
+padding: 0 10px;
+}
+
+#nav-left {
+width: 50%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+#nav-left > i {
+font-size: 2em;
+padding: 0px 15px;
+}
+
+#nav-left > .brand {
+color: white; /* Change text color to white */
+font-size: 1.5em;
+font-weight: bold;
+}
+
+#nav-right {
+width: 50%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+#nav-right > a {
+text-decoration: none;
+color: white; /* Change link text color to white */
+font-weight: normal;
+font-size: inherit;
+padding: 5px;
+margin: 10px;
+border: none;
+}
+
+#nav-right > a:hover {
+text-decoration: underline; /* Optional hover effect */
+color: #d9534f; /* Optional hover color (Tomato) */
+scale: 1.1;
+transition: 0.4s all ease-in-out;
+}
+
+.title{
+  /* color: white; */
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin: 0px 12px;
+  margin-top: 9px;
+  color:#fff;
+  font-weight: 600;
+  }
+.fa-bowl-rice {
+color: #d9534f; /* Tomato color for the logo */
+font-size: 2rem; /* Optional: adjust the size to match */
+padding: 10px;
+margin-left: 5px; /* Add some spacing between DISHES and the icon */
+}
+
+main {
+  background-color: rgb(7, 7, 7);
+  padding: 0 10px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 5%;
+}
+
+.dish-dropdown {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.dish-dropdown summary {
+  font-size: 1rem;
+  color: #d9534f;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dish-dropdown summary:hover {
+  color: #ffffff;
+}
+
+.dish-dropdown ul {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.dish-dropdown ul li {
+  margin-bottom: 8px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.dish-dropdown ul li:hover {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.summary:hover {
+  color: rgb(255, 255, 255);
+}
+
+ul {
+  padding-left: 20px;
+  animation: slideIn 1.2s ease;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+ul li:hover {
+  color: #ff4500;
+  transform: translateX(10px);
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #d9534f;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}

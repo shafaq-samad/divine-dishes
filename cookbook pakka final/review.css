@@ -1,0 +1,211 @@
+html,body{
+ 
+  font-family: 'DM Sans', sans-serif;
+  margin: 0%;
+  padding: 0%;
+
+}
+nav {
+background-color: black; /* Set the navbar background to black */
+height: 50px;
+display: flex;
+align-items: center;
+padding: 0 10px;
+}
+
+#nav-left {
+width: 50%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+#nav-left > i {
+font-size: 2em;
+padding: 0px 15px;
+}
+
+#nav-left > .brand {
+color: white; /* Change text color to white */
+font-size: 1.5em;
+font-weight: bold;
+}
+
+#nav-right {
+width: 50%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+#nav-right > a {
+text-decoration: none;
+color: white; /* Change link text color to white */
+font-weight: normal;
+font-size: inherit;
+padding: 5px;
+margin: 10px;
+border: none;
+}
+
+#nav-right > a:hover {
+text-decoration: underline; /* Optional hover effect */
+color: #d9534f; /* Optional hover color (Tomato) */
+scale: 1.1;
+transition: 0.4s all ease-in-out;
+}
+
+.title{
+/* color: white; */
+font-family: "Roboto", sans-serif;
+font-size: 2rem;
+margin: 0px 12px;
+margin-top: 28px;
+color:#fff;
+font-weight: 600;
+}
+.fa-bowl-rice {
+color: #d9534f; /* Tomato color for the logo */
+font-size: 2rem; /* Optional: adjust the size to match */
+margin-left: 5px; /* Add some spacing between DISHES and the icon */
+}
+  /* General Review Section Styling */
+#review-contact-section {
+    background-color: #f9f9f9; /* Light background color for the section */
+    padding: 40px 20px;
+  }
+  
+  .review-contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* White background for the container */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Title Styling */
+  .review-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .review-container p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  form {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, 
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none; /* Prevent resizing */
+  }
+  
+  /* Rating Stars Styling */
+  .stars {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .stars input {
+    display: none; /* Hide the radio inputs */
+  }
+  
+  .stars label {
+    font-size: 1.5rem;
+    color: #ddd; /* Default color for stars */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .stars input:checked ~ label, 
+  .stars input:checked + label {
+    color: #d9534f; /* Highlighted star color (gold) */
+  }
+  
+  .stars label:hover, 
+  .stars label:hover ~ label {
+    color: #d9534f; /* Highlight stars on hover */
+  }
+  
+  /* Submit Button Styling */
+  .submit-button {
+    display: block;
+    width: 100%;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .submit-button:hover {
+    background-color: dark#d9534f;
+  }footer {
+    background-color: #000; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center;
+    padding: 10px 0; /* Adjusted padding for proper spacing */
+    position: relative; /* Ensure it stays within the content flow */
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .footer-content {
+    margin: 0 auto;
+    max-width: 800px; /* Optional: Limit content width for alignment */
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 14px; /* Footer text font size */
+  }
+  
+  .social-icons {
+    margin-top: 10px; /* Space above the social icons */
+  }
+  
+  .social-icons a {
+    color: #d9534f; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 20px; /* Icon size */
+    text-decoration: none; /* Remove underline for links */
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+  }
+  
+  .social-icons a:hover {
+    color: white; /* Change to white on hover */
+  }
+  
